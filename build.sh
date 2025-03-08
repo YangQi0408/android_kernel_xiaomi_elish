@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e
 
-rm -rf KernelSU
-curl -LSs "https://raw.githubusercontent.com/rsuntk/KernelSU/main/kernel/setup.sh" | bash -s susfs-v1.5.5
-
 TOOLCHAIN_PATH=$HOME/proton-clang/proton-clang-20210522/bin
 echo "TOOLCHAIN_PATH: [$TOOLCHAIN_PATH]"
 export PATH="$TOOLCHAIN_PATH:$PATH"
